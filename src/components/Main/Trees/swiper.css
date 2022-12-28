@@ -1,0 +1,54 @@
+.swiper {
+  width: 250px;
+  height: 370px;
+  justify-self: center;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  border-radius: 18px;
+  font-weight: bold;
+  color: #fff;
+  flex-direction: column;
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+
+.swiper-slide h3, .buy {
+  font-family: "Montserrat Alternates";
+}
+
+.swiper-slide img {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  height: 70%;
+}
+
+.swiper-slide .buy {
+  background-color: hsl(210, 80%, 54%);
+  border: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  color: #fff;
+  font-weight: 500;
+  transition: background .4s box-shadow .4s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.swiper-slide h3 {
+  color: #333;
+  opacity: .8;
+}
+
+.buy:hover {
+  background-color: hsl(210, 80%, 50%);
+  box-shadow: 0 0px 5px hsla(210, 80%, 54%, .7);
+}

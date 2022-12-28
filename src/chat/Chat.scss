@@ -1,0 +1,153 @@
+.chat {
+  width: 100%; height: 100vh;
+  background-color: rgb(26, 33, 44);
+  overflow: hidden;
+
+  &__header {
+    width: 100%; height: 10vh;
+    box-shadow: 0 0 2px #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    gap: 20px;
+
+    &__icon {
+      width: 50px; height: 50px;
+      background-color: rgb(247, 204, 156);
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 24px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    &__title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+    }
+  }
+
+  &__main {
+    width: 100%; height: 83vh;
+    display: flex;
+    justify-content: flex-end;
+
+    &__messages-area {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      padding-top: 20px;
+
+      &__message-wrap {
+        width: 100%;
+        display: flex;
+        padding: 0 20px 20px;
+
+        &__message {
+          padding: 10px 18px;
+          border-radius: 10px;
+          text-align: left;
+          color: rgb(242, 243, 244);
+        }
+      }
+
+      .user {
+        justify-content: flex-end;
+
+        &__message {
+          background-color: rgb(72, 105, 142);
+        }
+      }
+
+      .bot {
+        display: flex;
+        position: relative;
+
+        &__message {
+          background-color: rgb(36, 48, 63);
+        }
+
+        .row {
+          position: absolute;
+          bottom: 0;
+          width: 120px;
+        }
+
+        input {
+          max-width: 70px; height: 30px;
+          position: absolute;
+          left: 2px; bottom: -20px;
+          background-color: rgb(154, 167, 177);
+          opacity: 1;
+          font-size: 15px;
+          border: none;
+          color: #333;
+          border-radius: 7px;
+          font-family: "Montserrat";
+          padding: 0 10px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        button {
+          position: absolute;
+          border: none;
+          width: 30px; height: 30px;
+          background-color: rgb(99, 193, 80);
+          border-radius: 24px; 
+          right: 10px; bottom: -20px;
+          cursor: pointer;
+          transition: all .2s;
+
+          &:hover {
+            opacity: .8;
+          }
+        }
+      }
+    }
+  }
+
+  &__footer {
+    width: 100%; height: 7vh;
+    position: relative;
+    box-shadow: 0 0 2px #fff;
+
+    &__input {
+      width: 100%; height: 100%;
+      background-color: transparent;
+      padding-left: 20px;
+      overflow: scroll;
+      color: rgb(230, 231, 232);
+      font-size: 19px;
+
+      &::placeholder {
+        color: rgb(166, 172, 180);
+        font-family: "Montserrat";
+        font-size: 17px;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__button {
+      height: 100%;
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      right: 20px;
+      cursor: pointer;
+    }
+  }
+}

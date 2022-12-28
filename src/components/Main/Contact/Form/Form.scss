@@ -1,0 +1,38 @@
+form {
+  width: 100%; min-height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+
+  input:not(input[type="submit"]), textarea {
+    width: 90%;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "Montserrat Alternates";
+    color: #f5f5f5;
+  }
+
+  button[type="submit"] {
+    font-family: "Montserrat Alternates";
+    background-color: hsl(210, 80%, 54%);
+    border: none;
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    transition: background .4s box-shadow .4s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: hsl(210, 80%, 50%);
+      box-shadow: 0 2px 12px hsla(210, 80%, 54%, .7);
+    }
+  }
+}

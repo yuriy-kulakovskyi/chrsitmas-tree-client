@@ -1,0 +1,57 @@
+.feedbacks {
+  background-image: url('./img/background.webp');
+  background-size: cover;
+  background-position: center;
+
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: .5rem;
+    font-family: "Montserrat Alternates";
+  }
+
+  &__container {
+    position: relative;
+    grid-template-columns: 330px;
+    justify-content: center;
+    row-gap: 3rem;
+    padding-top: 1.5rem;
+
+    &__feedback {
+      text-align: left;
+
+      &__name {
+        font-family: "Montserrat Alternates";
+      }
+
+      &__text {
+        font-size: .875rem;
+        margin-top: .5rem;
+        font-family: "Montserrat Alternates";
+      }
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    &__container {
+      grid-template-columns: repeat(2, 200px);
+      column-gap: 5rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: none;
+
+    &__container {
+      grid-template-columns: repeat(2, 400px);
+      column-gap: 7.5rem;
+      padding-top: 3rem;
+
+      &__feedback {
+        &__text {
+          font-size: .938rem;
+        }
+      }
+    }
+  }
+}

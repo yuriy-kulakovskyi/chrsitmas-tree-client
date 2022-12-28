@@ -1,0 +1,79 @@
+.contact {
+  &__container {
+    position: relative;
+    row-gap: 3.5rem;
+
+    &__data {
+      text-align: center;
+
+      &__title {
+        font-family: "Montserrat Alternates";
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 800;
+      }
+
+      &__subtitle {
+        font-family: "Montserrat";
+        font-size: 1rem;
+        font-weight: 800;
+        margin-top: 10px;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__snow-1, &__snow-2 {
+      width: 50px;
+      position: absolute;
+    }
+
+    &__snow-1 {
+      top: 4rem; left: 1.5rem;
+      animation: animate-snow-1 5s infinite ease-in-out;
+    }
+
+    &__snow-2 {
+      top: 22rem; right: 0;
+      animation: animate-snow-2 5s infinite ease-in-out;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &__container {
+      &__data {
+        text-align: initial;
+        margin-left: 5%;
+
+        &__title {
+          text-align: initial;
+        }
+      }
+
+      &__snow-1 {
+        top: 4.5rem; left: 2rem;
+      }
+
+      &__snow-2 {
+        right: 2rem;
+      }
+    }
+  }
+}
+
+/* Snow animation */
+@keyframes animate-snow-1 {
+  0%, 100% {
+    transform: scale(.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+@keyframes animate-snow-2 {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(.5);
+  }
+}

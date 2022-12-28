@@ -1,0 +1,147 @@
+.home {
+  position: relative;
+  background: linear-gradient(180deg,
+  hsl(210, 88%, 20%),
+  hsl(210, 70%, 58%));
+
+  height: 650px;
+  padding-top: 7rem;
+  overflow: hidden;
+
+  &__title {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    margin-top: 1.5rem;
+  }
+
+  img {
+    position: absolute;
+  }
+
+  &__mountain-1, &__snow {
+    bottom: 0;
+  }
+
+  &__village,
+  &__pine,
+  &__moon,
+  &__trineo {
+    left: 0; right: 0;
+    margin: 0 auto;
+  }
+
+  &__village {
+    width: 260px;
+    bottom: 1rem;
+  }
+
+  &__pine {
+    width: 250px;
+    bottom: 4rem;
+  }
+
+  &__mountain-2 {
+    bottom: 3rem;
+  }
+
+  &__mountain-3 {
+    bottom: 6rem;
+  }
+
+  &__mooon {
+    width: 300px;
+    bottom: 8.5rem;
+  }
+
+  &__trineo {
+    width: 250px;
+    bottom: 14.5rem;
+  }
+
+  @media screen and (min-width: 576px) {
+    &__village {
+      width: 360px;
+    }
+
+    &__pine {
+      width: 330px;
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    height: 800px;
+
+    &__village {
+      width: 460px;
+    }
+
+    &__pine {
+      width: 400px;
+      bottom: 7rem;    
+    }
+
+    &__moon {
+      width: 450px;
+      bottom: 12rem;
+    }
+
+    &__trineo {
+      width: 350px;
+      bottom: 20rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &__title {
+      font-size: 4rem;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 980px;
+
+    &__title {
+      font-size: 2.5rem;
+    }
+
+    &__mountain-1,
+    &__mountain-2,
+    &__mountain-3,
+    &__snow {
+      width: 100%;
+    }
+
+    &__village {
+      width: 750px;
+      bottom: 4rem;
+    }
+
+    &__pine {
+      width: 720px;
+      bottom: 12.5rem;
+    }
+
+    &__mounain-1,
+    &__mounain-2 {
+      bottom: -.5rem;
+    }
+
+    &__moon {
+      width: 600px;
+      bottom: 14rem;
+    }
+
+    &__trineo {
+      width: 500px;
+      bottom: 28rem;
+    }
+  }
+
+  @media screen and (min-width: 1700px) {
+    max-width: 1280px;
+    height: 990px;
+    margin-inline: auto;
+  }
+}
