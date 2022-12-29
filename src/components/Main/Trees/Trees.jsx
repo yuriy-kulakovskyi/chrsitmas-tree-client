@@ -15,7 +15,7 @@ import { EffectCards, Navigation } from "swiper";
 const Trees = () => {
   const [trees, updateTrees] = useState([]);
 
-  fetch('http://localhost:3600/read')
+  fetch('https://chrsitmas-tree-server.onrender.com/read')
   .then(res => res.json())
   .then(data => {
     updateTrees(data);

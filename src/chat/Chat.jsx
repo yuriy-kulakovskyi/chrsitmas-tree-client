@@ -182,7 +182,7 @@ const Chat = () => {
         sendInfo(good);
 
         function sendInfo(formData) {
-          fetch('http://localhost:3600/send', {
+          fetch('https://chrsitmas-tree-server.onrender.com/send', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
