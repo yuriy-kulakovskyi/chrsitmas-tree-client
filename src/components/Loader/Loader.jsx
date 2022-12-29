@@ -14,14 +14,21 @@ const Loader = () => {
   }, []);
 
   const oninput = () => {
-    if (button.current.value === 100) {
-      document.querySelector(".center-xy").style.transform = 'scale(0)';
-    }
     txt.current.style.opacity = 1 - button.current.value / 100;
     loader.current.style.opacity = 1 - button.current.value / 100;
+
+    if (loader.current.style.opacity === "0") {
+      loader.current.style.display = 'none';
+    }
   }
   
   const onmouseup = () => {
+    if (button.current.value < 100) {
+      button.current.value = 0;
+      txt.current.style.opacity = 1 - button.current.value / 100;
+      loader.current.style.opacity = 1 - button.current.value / 100;
+    } 
+
     setTimeout(() => {
       gsap.from(".home__village", 1.2, {opacity: 0, y: 100, delay: .1});
       gsap.to(".home__village", 1.2, {opacity: 1, y: 0, delay: .1});
@@ -48,7 +55,7 @@ const Loader = () => {
       gsap.to(".home__title", 1.2, {opacity: 1, y: 0, delay: 1});
 
       document.body.style.overflowY = "scroll";
-      loader.current.style.display = "none";
+      document.querySelector(".center-xy").style.display = 'none';
     }, 50);
   }
 
