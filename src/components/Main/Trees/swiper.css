@@ -8,13 +8,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 22px;
+  font-size: 18px;
   border-radius: 18px;
   font-weight: bold;
   color: #fff;
   flex-direction: column;
   background-color: #fff;
   padding-bottom: 10px;
+  text-transform: capitalize;
 }
 
 .swiper-slide h3, .buy {
