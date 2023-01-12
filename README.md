@@ -10,7 +10,6 @@
 <h4 align="center">A webpage to buy a Christmas tree, using <a href="https://uk.reactjs.org/" target="_blank">React.js</a> + <a href="https://www.mongodb.com/" target="_blank">MongoDB</a></h4>
 
 <p align="center">
-  <a href="https://uk.reactjs.org/">Key Features</a> •
   <a href="https://chrsitmas-tree-client-p1mr.vercel.app/">Page</a> •
   <a href="https://swiperjs.com/">Swiper</a> •
   <a href="https://uk.reactjs.org/">React.js</a> •
