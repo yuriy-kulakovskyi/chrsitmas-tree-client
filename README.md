@@ -15,7 +15,7 @@
   <a href="https://swiperjs.com/">Swiper</a>
 </p>
 
-https://raw.githubusercontent.com/amitmerchant1990/el<img width="1680" alt="Screenshot 2023-01-12 at 22 32 25" src="https://user-images.githubusercontent.com/84936189/212174915-48cf9097-87c5-4a00-b3f7-33f9c81257dc.png">
+<img width="1680" alt="Screenshot 2023-01-12 at 22 32 25" src="https://user-images.githubusercontent.com/84936189/212174915-48cf9097-87c5-4a00-b3f7-33f9c81257dc.png">
 
 > [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
 > GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
