@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">A webpage to buy a Christmas tree, using <a href="https://uk.reactjs.org/" target="_blank">React.js</a> and <a href="https://www.mongodb.com/" target="_blank">MongoDB</a></h4>
+<h4 align="center">A webpage to buy a Christmas tree, using <a href="https://uk.reactjs.org/" target="_blank">React.js</a> + <a href="https://www.mongodb.com/" target="_blank">MongoDB</a></h4>
 
 <p align="center">
   <a href="https://uk.reactjs.org/">Key Features</a> •
