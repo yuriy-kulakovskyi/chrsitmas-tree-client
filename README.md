@@ -19,4 +19,4 @@
 
 > [Portfolio 👨‍💻](https://yuriy-kulakovskyi.github.io/Portfolio/) &nbsp;&middot;&nbsp;
 > 
-> <a href="https://github.com/yuriy-kulakovskyi"><img src="https://img2.freepng.ru/20180716/tza/kisspng-github-computer-icons-clip-art-gits-5b4d20ab1f4131.145288281531781291128.jpg" alt="GitHub logo"></a> &nbsp;&middot;&nbsp;
+> <a href="https://github.com/yuriy-kulakovskyi"><img src="https://www.pngmart.com/files/22/GitHub-PNG-Picture.png" alt="GitHub logo"></a> &nbsp;&middot;&nbsp;
